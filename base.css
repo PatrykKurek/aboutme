@@ -53,8 +53,13 @@ h3 {
 }
 
 .left_side h2 {
-  text-align: center;
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .left_side ul {
@@ -75,8 +80,15 @@ h3 {
   background-image: linear-gradient(to bottom right, #080870, #6075b1);
   color: #c0d6d8;
   border-radius: 10px;
-  text-align: center;
   margin: 30px 50px 10px 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .right_side p {
@@ -86,6 +98,94 @@ h3 {
 
 .right_side li {
   margin-bottom: 10px;
+}
+
+.skills::before {
+  background-image: url("skills.png");
+  background-size: 30px 30px;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
+}
+
+.languages::before {
+  background-image: url("languages.png");
+  background-size: 30px 30px;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
+}
+
+.hobbies::before {
+  background-image: url("sports.png");
+  background-size: 30px 30px;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
+}
+
+.personal::before {
+  background-image: url("personal.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
+}
+
+.education::before {
+  background-image: url("education.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
+}
+
+.job::before {
+  background-image: url("job.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 35px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
+}
+
+.contact::before {
+  background-image: url("contact.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  content: "";
 }
 
 .face {
@@ -133,9 +233,100 @@ h3 {
   .box .right_side h2 {
     margin: 20px 10px 10px 10px;
   }
+  .box .right_side ul {
+    margin-bottom: 10px;
+  }
+  .box .right_side ul li {
+    margin-bottom: 5px;
+  }
   .box .right_side p {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .box .skills::before {
+    background-image: url("skills.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+  }
+  .box .languages::before {
+    background-image: url("languages.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+  }
+  .box .hobbies::before {
+    background-image: url("sports.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+  }
+  .box .personal::before {
+    background-image: url("personal.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+    background-position: left bottom;
+  }
+  .box .education::before {
+    background-image: url("education.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+    background-position: left bottom;
+  }
+  .box .job::before {
+    background-image: url("job.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+    background-position: left bottom;
+  }
+  .box .contact::before {
+    background-image: url("contact.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    content: "";
+    background-position: left bottom;
   }
 }
 /*# sourceMappingURL=base.css.map */

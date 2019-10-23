@@ -41,8 +41,11 @@ h3{
   color:rgb(192, 214, 216);
  
     h2{
-        text-align: center; 
-        font-size: 25px;      
+        
+        font-size: 25px;
+        display: flex;
+        justify-content: center; 
+            
     }
     ul{
       margin-bottom: 20px;
@@ -58,8 +61,12 @@ h3{
         background-image: linear-gradient(to bottom right, rgb(8, 8, 112),rgb(96, 117, 177));
         color:rgb(192, 214, 216);
         border-radius: 10px;
-        text-align: center;
         margin: 30px 50px 10px 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        
         
       }
       p{
@@ -72,12 +79,96 @@ h3{
       }
     
   }
+  .skills::before{    
+    background-image: url('skills.png');
+    background-size: 30px 30px;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";
+    
+  }
+  .languages::before{    
+    background-image: url('languages.png');
+    background-size: 30px 30px;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";
+    
+  }
+  .hobbies::before{    
+    background-image: url('sports.png');
+    background-size: 30px 30px;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";    
+  }
+  .personal::before{    
+    background-image: url('personal.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";    
+    
+  }
+  .education::before{    
+    background-image: url('education.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";    
+    
+  }
+  .job::before{    
+    background-image: url('job.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 35px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";    
+       
+  }
+  .contact::before{    
+    background-image: url('contact.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+    content:"";    
+    
+  }
   
   .face {
     height: auto;
     width: 100%;
     margin-top: 50px;
   }
+  .icons{    
+   
+  }
+
 @media only screen and (max-width: 1200px)
 {
   .box{
@@ -117,10 +208,96 @@ h3{
       h2{
         margin: 20px 10px 10px 10px;
         }
+        ul{
+          margin-bottom: 10px;
+          li{
+            margin-bottom: 5px;
+          }
+        }
         p{
           margin-left: 10px;
           margin-right: 10px;
         }
+    }
+    .skills::before{    
+      background-image: url('skills.png');
+      background-size: 20px 20px;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";
+      
+    }
+    .languages::before{    
+      background-image: url('languages.png');
+      background-size: 20px 20px;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";
+      
+    }
+    .hobbies::before{    
+      background-image: url('sports.png');
+      background-size: 20px 20px;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";    
+    }
+    .personal::before{    
+      background-image: url('personal.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";    
+      background-position: left bottom;
+    }
+    .education::before{    
+      background-image: url('education.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";    
+      background-position: left bottom;
+    }
+    .job::before{    
+      background-image: url('job.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";    
+      background-position: left bottom;   
+    }
+    .contact::before{    
+      background-image: url('contact.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+      content:"";    
+      background-position: left bottom; 
     } 
       
   }

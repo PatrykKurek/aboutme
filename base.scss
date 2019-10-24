@@ -1,3 +1,6 @@
+body{
+  min-width: 319px;
+}
 .box{
   display: flex;
   width: 50%;
@@ -195,23 +198,28 @@ h3{
     width: 100%;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    h2{
-      font-size: 15px; 
-    }
+    
     ul{
       font-size: 10px;
     }
     p{
       font-size: 10px; 
     }
-    .right_side {
+    .left_side{
       h2{
-        margin: 20px 10px 10px 10px;
+        font-size: 12px;
+      }
+
+    }
+    .right_side {
+        h2{
+        margin: 20px 10px 10px 10px;        
+        font-size: 15px;        
         }
         ul{
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           li{
-            margin-bottom: 5px;
+            margin-bottom: 4px;
           }
         }
         p{
@@ -220,85 +228,63 @@ h3{
         }
     }
     .skills::before{    
-      background-image: url('skills.png');
-      background-size: 20px 20px;
-      display: inline-block;
-      filter: brightness(0) invert(1);
-      width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";
+     
+      background-size: 15px 15px;     
+      width: 15px; 
+      height: 15px;
+      margin-right: 5px;
+     
       
     }
     .languages::before{    
-      background-image: url('languages.png');
-      background-size: 20px 20px;
-      display: inline-block;
-      filter: brightness(0) invert(1);
-      width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";
+      background-size: 15px 15px;     
+      width: 15px; 
+      height: 15px;
+      margin-right: 5px;
       
     }
     .hobbies::before{    
-      background-image: url('sports.png');
-      background-size: 20px 20px;
-      display: inline-block;
-      filter: brightness(0) invert(1);
-      width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";    
+      background-size: 15px 15px;     
+      width: 15px; 
+      height: 15px;
+      margin-right: 5px;
     }
     .personal::before{    
-      background-image: url('personal.png');
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      display: inline-block;
-      filter: brightness(0) invert(1);
-      width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";    
-      background-position: left bottom;
+      background-size: 15px 15px;     
+      width: 15px; 
+      height: 15px;
+      margin-right: 5px;
     }
     .education::before{    
-      background-image: url('education.png');
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      display: inline-block;
-      filter: brightness(0) invert(1);
-      width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";    
-      background-position: left bottom;
+      background-size: 15px 15px;     
+      width: 15px; 
+      height: 15px;
+      margin-right: 5px;
     }
     .job::before{    
-      background-image: url('job.png');
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      display: inline-block;
-      filter: brightness(0) invert(1);
+      background-size: 15px 15px;     
       width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";    
-      background-position: left bottom;   
+      height: 15px;
+      margin-right: 5px;  
     }
     .contact::before{    
-      background-image: url('contact.png');
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      display: inline-block;
-      filter: brightness(0) invert(1);
-      width: 20px; 
-      height: 20px;
-      margin-right: 10px;
-      content:"";    
-      background-position: left bottom; 
-    } 
+      background-size: 15px 15px;     
+      width: 15px; 
+      height: 15px;
+      margin-right: 5px;
+    }
+    .occupation{
+      font-size: 12px;
+      text-align: center;
+      color: rgb(96, 117, 177);
+      margin-left: 15px;
+      }
+      .my_name{
+        font-size: 15px;
+      text-align: center;
+      color: rgb(29, 59, 143);
+      margin-left: 15px;
+      } 
       
   }
 }

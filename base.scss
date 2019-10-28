@@ -37,6 +37,10 @@ ul {
 h3{
   color:rgb(26, 26, 112)
 }
+.job{
+  display: flex;
+  align-items: center;
+}
 .left_side{
   width: 30%;
   height: 130vh;
@@ -171,6 +175,17 @@ h3{
   .icons{    
    
   }
+  @media only screen and (max-width: 1685px){
+      .job::before{
+        margin-left: 20px;
+      }
+   
+   }
+   @media only screen and (max-width: 1435px){
+    .job::before{
+      margin-left: auto;
+    }
+ }
 
 @media only screen and (max-width: 1200px)
 {
@@ -187,8 +202,10 @@ h3{
           margin-left: 100px;
           margin-right: 100px;
         }
+    }
+    .job::before{
+      margin-left: 10px;
     } 
-      
   }
 }
 @media only screen and (max-width: 700px)
@@ -265,7 +282,8 @@ h3{
       background-size: 15px 15px;     
       width: 20px; 
       height: 15px;
-      margin-right: 5px;  
+      margin-right: 5px;
+      margin-left: 5px;  
     }
     .contact::before{    
       background-size: 15px 15px;     
@@ -287,4 +305,14 @@ h3{
       } 
       
   }
+  
+}
+@media only screen and (max-width: 400px){
+ .gmail{
+   font-size: 8px;
+ }
+ .left_side{
+  height: 135vh;
+ }
+
 }
